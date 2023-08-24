@@ -1,0 +1,195 @@
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+
+.body {
+  background-color: #f0f0f0;
+  overflow: auto;
+}
+
+
+/* ============================ NAV BOTTOM ============================ */
+
+
+.navbtm {
+  bottom: 12px;
+  background: #ff9a12;
+}
+
+.navbtm ul li button {
+  padding: 2px;
+  cursor: pointer;
+  color: #70190d;
+}
+
+.navbtm ul li button .active {
+  color: white;
+}
+
+
+.bottomnav {
+  position: absolute;
+  bottom: 1.2rem;
+}
+
+
+/* ============================ LOGIN PAGE ============================ */
+
+.login-body {
+  background-color: white;
+}
+
+.login {
+  height: 50%;
+  background-color: #b12414;
+}
+
+.login form label {
+  color: #ffd412;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.login form input {
+  font-size: .8rem;
+  font-weight: 600;
+  padding: 5px 9px;
+  background-color: #e8e5e5;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.login form button {
+  background-color: #ff9a12;
+}
+
+
+
+
+
+/* ============================ CONTAINER ============================ */
+
+
+.content {
+  overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* ============================ PROFILE ============================ */
+
+
+.notif  {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background: #1c1c1c;
+}
+
+
+/* ============================ BANNER CONTAINER ============================ */
+
+.banner  {
+  background-color: #a92011;
+}
+
+.banner h2 i {
+  color: #ffde05;
+}
+
+.banner-list {
+  /* background-color: #590eee; */
+  background-color: #70190d;
+}
+
+.banner-container {
+  height: 140px;
+  overflow: auto;
+}
+
+.banner-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+/* ============================ CHART CONTAINER ============================ */
+
+
+.chart-con {
+  background: #a92011;
+}
+
+/* ============================ BIODATA ============================ */
+
+.biodata-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%; /* Membuat kontainer bundar */
+  overflow: hidden;
+}
+
+.bio-list {
+  border-bottom: 1px solid #f16354;
+}
+
+.bio-list th {
+  font-weight: 600;
+}
+
+.bio-list td {
+  /* background-color: #590eee; */
+  background-color: #f0a309;
+  font-size: 8.5px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+
+/* ============================ BIODATA ITEM ============================ */
+
+
+.biodata-item {
+  background-color: #a92011;
+}
+
+
+.bio-ul-list {
+  overflow: auto;
+}
+
+.bio-ul-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+
+.btn-item {
+  padding: 2px 8px;
+  margin-right: 5px;
+  background-color: #d7d7d7;
+  border-radius: 3px;
+  color: #0c0c0c;
+}
+
+
+.bio-ul-list .active {
+  color: #f6f6f6;
+  background-color: #FFAA05;
+}
