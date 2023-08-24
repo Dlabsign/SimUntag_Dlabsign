@@ -6,7 +6,7 @@ const ProfilePage = () => {
     <div className="biodata text-black px-3.5 w-full h-full flex flex-col items-center mb-36 rounded-lg">
       <div className="biodata flex flex-col items-center ">
         <div className="biodata-img mb-2.5 rounded-full">
-          <img src="/src/assets/img/_DSC0024.JPG" alt="" />
+          <img src="./_DSC0024.JPG" alt="" />
         </div>
         <h2 className=" font-bold text-base">Daniel Kurnia Putra</h2>
         <h2 className=" opacity-7p5 font-normal text-sm">Mahasiswa Aktif</h2>
