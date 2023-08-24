@@ -2,7 +2,8 @@ import Schedule from "../components/dashboard/Banner";
 import Profile from "../components/dashboard/Profile";
 import IpkChart from "../components/dashboard/ipk";
 import IpsChart from "../components/dashboard/ips";
-import SksChart from "../components/dashboard/sks";
+import SksChart from "../components/dashboard/skscomponent";
+
 
 const Dashboard = () => {
   return (

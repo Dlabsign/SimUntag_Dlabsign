@@ -1,5 +1,5 @@
 import PhoneFrame from "./frame";
-import React, { useState } from "react";
+import { useState } from "react";
 import LoginComponent from "./page/login";
 
 function App() {
