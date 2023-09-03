@@ -14,6 +14,13 @@
 @tailwind utilities;
 
 
+
+:root {
+  --red-color: #a92011;
+  --yellow-color: #ff9a12;
+}
+
+
 .body {
   background-color: #f0f0f0;
   overflow: auto;
@@ -72,10 +79,8 @@
 }
 
 .login form button {
-  background-color: #ff9a12;
+  background-color: var(--yellow-color);
 }
-
-
 
 
 
@@ -102,7 +107,7 @@
 }
 
 
-/* ============================ BANNER CONTAINER ============================ */
+/* ============================ JADWAL CONTAINER ============================ */
 
 .banner  {
   background-color: #a92011;
@@ -154,7 +159,7 @@
 
 .bio-list td {
   /* background-color: #590eee; */
-  background-color: #f0a309;
+  background-color: var(--yellow-color);
   font-size: 8.5px;
   border-radius: 2px;
   font-weight: 600;
@@ -191,5 +196,65 @@
 
 .bio-ul-list .active {
   color: #f6f6f6;
-  background-color: #FFAA05;
+  background-color: var(--yellow-color);
+}
+
+
+/* ============================ KEUANGAN PAGE ============================ */
+
+.mn-dropdown {
+  background-color: var(--red-color);
+}
+
+.dropdown {
+ background-color: #f0f0f0;
+ border: none;
+ border-radius: 2px;
+ color: #1c1c1c;
+}
+
+.table-keuangan {
+  padding: 5px;
+  background-color: var(--red-color);
+}
+
+.banner button {
+  background-color: var(--yellow-color);
+}
+
+
+/* ============================ KEUANGAN MODAL  ============================ */
+
+
+
+
+.va-dropdown {
+  z-index: 10;
+  background-color: var(--red-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%; /* Sesuaikan dengan lebar elemen yang ingin Anda tengahkan */
+  height: 25%; 
+}
+
+.va-box {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.76);
+  top: 0;
+  left: 0;
+}
+
+.va-dropdown button {
+  background: var(--yellow-color);
+  }
+
+.va-dropdown button:hover {
+  color: #0c0c0c;
 }

@@ -93,3 +93,63 @@ export const Pendidikan = [
     kota: "Kabupaten Sidoarjo",
   },
 ];
+
+
+export const Tagihan = [
+  {
+    id: 1,
+    bulan: "Jan",
+    status: "Lunas",
+    jenisTagihan: "Uang Kuliah S1",
+    Jumlah: 1100000,
+  },
+  {
+    id: 2,
+    bulan: "Feb",
+    status: "BB",
+    jenisTagihan: "Praktikum PBOF",
+    Jumlah: 150000,
+  },
+  {
+    id: 3,
+    bulan: "Feb",
+    status: "BB",
+    jenisTagihan: "Uang Kuliah S1",
+    Jumlah: 500,
+  },
+  {
+    id: 4,
+    bulan: "Jan",
+    status: "BB",
+    jenisTagihan: "Uang Kuliah S1",
+    Jumlah: 500,
+  },
+  {
+    id: 5,
+    bulan: "Jan",
+    status: "BB",
+    jenisTagihan: "Uang Kuliah S1",
+    Jumlah: 15000,
+  },
+  {
+    id: 6,
+    bulan: "Jan",
+    status: "BB",
+    jenisTagihan: "Uang Kuliah S1",
+    Jumlah: 500,
+  },
+  {
+    id: 7,
+    bulan: "Jan",
+    status: "BB",
+    jenisTagihan: "Uang Kuliah S1",
+    Jumlah: 500,
+  },
+  {
+    id: 8,
+    bulan: "Jan",
+    status: "BB",
+    jenisTagihan: "Uang Kuliah S1",
+    Jumlah: 500,
+  },
+];

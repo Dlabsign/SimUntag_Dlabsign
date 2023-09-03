@@ -1,10 +1,11 @@
 import NavBottom from "./components/navbar";
 import Dashboard from "./page/dashboard";
+import Keuangan from "./page/keuangan";
 import ProfilePage from "./page/profilepage";
 import { useState } from "react";
 
 function PhoneFrame() {
-  const [activeElement, setActiveElement] = useState("dashboard"); // State untuk melacak elemen yang aktif
+  const [activeElement, setActiveElement] = useState("keuangan"); // State untuk melacak elemen yang aktif
 
   // Fungsi untuk menampilkan elemen Dashboard
   const showDashboard = () => {
@@ -14,6 +15,10 @@ function PhoneFrame() {
   // Fungsi untuk menampilkan elemen ProfilePage
   const showProfilePage = () => {
     setActiveElement("profile");
+  };
+
+  const ShowKeuangan = () => {
+    setActiveElement("keuangan");
   };
 
   return (
@@ -26,10 +31,12 @@ function PhoneFrame() {
         <div className="content h-[90%] rounded border-black  ">
           {activeElement === "dashboard" && <Dashboard />}{" "}
           {activeElement === "profile" && <ProfilePage />}{" "}
+          {activeElement === "keuangan" && <Keuangan />}{" "}
         </div>
         <div className="bottomnav w-full px-3.5">
           <NavBottom
             showDashboard={showDashboard}
+            ShowKeuangan={ShowKeuangan}
             showProfilePage={showProfilePage}
           />
         </div>

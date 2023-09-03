@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Keuangan from "../page/keuangan";
 
-const NavBottom = ({ showDashboard, showProfilePage }) => {
+const NavBottom = ({ showDashboard, showProfilePage, ShowKeuangan }) => {
   const [activeButton, setActiveButton] = useState(null);
 
   const handleButtonClick = (buttonNumber) => {
@@ -12,7 +13,7 @@ const NavBottom = ({ showDashboard, showProfilePage }) => {
     { label: <i className="fa-solid fa-user"></i>, onClick: showProfilePage },
     {
       label: <i className="fa-solid fa-money-bill"></i>,
-      onClick: showProfilePage,
+      onClick: ShowKeuangan,
     },
   ];
 

@@ -11,9 +11,10 @@ function App() {
   };
 
   return (
-    <div>
-      {!isLoggedIn ? <LoginComponent onLogin={handleLogin} /> : <PhoneFrame />}
-    </div>
+    <PhoneFrame />
+    // <div>
+    //   {!isLoggedIn ? <LoginComponent onLogin={handleLogin} /> : <PhoneFrame />}
+    // </div>
   );
 }
 
